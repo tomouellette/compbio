@@ -18,7 +18,7 @@
 
 correlationTable <- function(directory, nucleotideWidth = 3) {
         
-        setwd("~/Downloads/assignmentOne")
+        setwd(directory)
         
         library(dplyr)
         library(data.table)
@@ -29,8 +29,8 @@ correlationTable <- function(directory, nucleotideWidth = 3) {
         
         # 1. Build all possible nucleotide sequences of length k (nucleotideWidth); standard is 3 
         permute <- c("A", "G", "C", "T")
-        permute <- data.table(permutations(permute, wordcount, replace = TRUE))
-        permute$strings <- apply(permute[,1:wordcount] , 1, paste, collapse = "")
+        permute <- data.table(permutations(permute, nucleotideWidth, replace = TRUE))
+        permute$strings <- apply(permute[,1:nucleotideWidth] , 1, paste, collapse = "")
         
         # 2. Build a frequency table for each of the genes analyzed
         countTable <- data.table()
