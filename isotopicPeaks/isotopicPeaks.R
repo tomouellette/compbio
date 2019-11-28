@@ -64,7 +64,7 @@ getMasses <- function(ion_list = getIonsOutput, PTM = "none") {
         for (i in 1:dim(ion_list)[1]) {
           if ("K" %in% strsplit(ion_list$ions[i],"")[[1]]) {
             kcr <- ion_list[i,]
-            kcr$ion_masses <- as.numeric(kcr$ion_masses) + 68
+            kcr$ion_masses <- as.numeric(kcr$ion_masses) + 68/2
             kcr$PTM <- "Kcr"
             crotonylation <- rbind(crotonylation, kcr)
           } 
