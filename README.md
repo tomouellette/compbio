@@ -1,6 +1,6 @@
 # Computational biology
 
-This repository aims to be a compilation of various naive implementations of computational biology methods.
+This repository aims to be a compilation of various implementations of computational biology methods.
 
 ## Table of contents
 
