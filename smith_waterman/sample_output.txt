@@ -1,0 +1,35 @@
+====================================
+            Test case 1
+            Score = 18
+====================================
+
+Alignment 1:
+8       3'  GGAUAGCC  5'       1
+            ||| ||||            
+1       5'  CCUUUCGG  3'       8
+
+Alignment 2:
+8       3'  GGAUAGCC  5'       1
+            || |||||            
+9       5'  CCAAUCGG  3'      16
+
+Alignment 3:
+8       3'  GGAUAGCC  5'       1
+            ||| ||||            
+20      5'  CCUUUCGG  3'      27
+
+Alignment 4:
+8       3'  GGAUAGCC  5'       1
+            || |||||            
+28      5'  CCAAUCGG  3'      35
+
+====================================
+            Test case 2
+            Score = 27
+====================================
+
+Alignment 1:
+17      3'  G-UA-A-A-GUG-CUUAAGAAA  5'       1
+            | :| | | | | | |||||||            
+31      5'  CUGUAUAUACUCUGUAUUCUUU  3'      52
+
